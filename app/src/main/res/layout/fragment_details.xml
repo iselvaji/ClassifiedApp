@@ -1,0 +1,52 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/details_fragment"
+    tools:context=".view.MainActivity">
+
+   <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgViewClassified"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginVertical="@dimen/dim_5"
+        tools:background="@tools:sample/backgrounds/scenic"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtNameClassified"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dim_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgViewClassified"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginVertical="@dimen/dim_10"
+        tools:text="@string/app_name"
+        android:singleLine="true" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtPriceClassified"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dim_5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginVertical="@dimen/dim_10"
+        tools:text="@string/app_name"
+        app:layout_constraintTop_toBottomOf="@id/txtNameClassified" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtCreatedAt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dim_5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginVertical="@dimen/dim_10"
+        tools:text="@string/app_name"
+        app:layout_constraintTop_toBottomOf="@id/txtPriceClassified" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

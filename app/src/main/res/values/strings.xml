@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ClassifiedApp</string>
+    <string name="api_error_message">Unable to load the data. Please try later.</string>
+    <string name="network_error_message">Unable to load the data. Please check the internet connection.</string>
+</resources>
